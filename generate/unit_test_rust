@@ -1,0 +1,14 @@
+#!/bin/bash
+Fail()
+{
+    echo "ERROR($0): $1"
+    exit 1
+}
+
+[[ "$1" == "" || "$1" == "-v" ]] || Fail "Invalid command line options."
+cd ../source/rust/astronomy_engine || Fail "Cannot change to Rust source directory."
+cargo test || Fail "Rust unit test failure."
+cd ../../../generate || Fail "Cannot change back to 'generate' directory."
+
+echo "unit_test_rust: success"
+exit 0
