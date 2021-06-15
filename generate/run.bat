@@ -143,7 +143,7 @@ if not exist "!CTESTEXE!" (
 
 REM -----------------------------------------------------------------------------------------
 echo.
-echo.Running C# tests.
+echo.Running C# unit tests.
 pushd dotnet\csharp_test
 dotnet run -- all
 if errorlevel 1 (exit /b 1)
@@ -192,7 +192,7 @@ for %%f in (temp\c_longitude_*.txt) do (
 
 REM -----------------------------------------------------------------------------------------
 
-echo.Running Python tests.
+echo.Running Python unit tests.
 test.py all
 if errorlevel 1 (exit /b 1)
 
@@ -208,6 +208,15 @@ if errorlevel 1 (exit /b 1)
 echo.Verifying Python test output.
 !GENEXE! check temp\py_check.txt
 if errorlevel 1 (exit /b 1)
+
+REM -----------------------------------------------------------------------------------------
+
+echo.Running Rust unit tests.
+
+pushd ..\source\rust\astronomy_engine
+cargo test
+if errorlevel 1 (exit /b 1)
+popd
 
 REM -----------------------------------------------------------------------------------------
 
