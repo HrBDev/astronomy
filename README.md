@@ -19,6 +19,19 @@
             <div>Browser</div>
             <div><img src="source/js/javascript.svg" width="100" height="100" alt="JavaScript" /></div>
         </td>
+    </tr>
+    <tr>
+        <td style="text-align: center;"><a href="demo/c/">Examples</a></td>
+        <td style="text-align: center;"><a href="demo/csharp/">Examples</a></td>
+        <td style="text-align: center;"><a href="demo/browser/">Examples</a></td>
+    </tr>
+    <tr>
+        <td style="text-align: center;"><a href="source/c/">Documentation</a></td>
+        <td style="text-align: center;"><a href="source/csharp/">Documentation</a></td>
+        <td style="text-align: center;"><a href="source/js/">Documentation</a></td>
+    </tr>
+    <tr><td colspan="3">&nbsp;</td></tr>
+    <tr>
         <td style="text-align: center;">
             <div>Node.js</div>
             <div><img src="source/js/nodejs.svg" width="100" height="100" alt="Node.js" /></div>
@@ -33,17 +46,11 @@
         </td>
     </tr>
     <tr>
-        <td style="text-align: center;"><a href="demo/c/">Examples</a></td>
-        <td style="text-align: center;"><a href="demo/csharp/">Examples</a></td>
-        <td style="text-align: center;"><a href="demo/browser/">Examples</a></td>
         <td style="text-align: center;"><a href="demo/nodejs/">Examples</a></td>
         <td style="text-align: center;"><a href="demo/python/">Examples</a></td>
         <td style="text-align: center;"><a href="demo/rust/">Examples</a></td>
     </tr>
     <tr>
-        <td style="text-align: center;"><a href="source/c/">Documentation</a></td>
-        <td style="text-align: center;"><a href="source/csharp/">Documentation</a></td>
-        <td style="text-align: center;"><a href="source/js/">Documentation</a></td>
         <td style="text-align: center;"><a href="source/js/">Documentation</a></td>
         <td style="text-align: center;"><a href="source/python/">Documentation</a></td>
         <td style="text-align: center;"><a href="source/rust/">Documentation</a></td>
