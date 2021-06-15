@@ -214,6 +214,8 @@ REM ----------------------------------------------------------------------------
 echo.Running Rust unit tests.
 
 pushd ..\source\rust\astronomy_engine
+cargo fmt
+if errorlevel 1 (exit /b 1)
 cargo test
 if errorlevel 1 (exit /b 1)
 popd

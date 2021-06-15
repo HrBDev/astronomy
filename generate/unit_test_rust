@@ -7,6 +7,7 @@ Fail()
 
 [[ "$1" == "" || "$1" == "-v" ]] || Fail "Invalid command line options."
 cd ../source/rust/astronomy_engine || Fail "Cannot change to Rust source directory."
+cargo fmt || Fail "Error formatting Rust code."
 cargo test || Fail "Rust unit test failure."
 cd ../../../generate || Fail "Cannot change back to 'generate' directory."
 
